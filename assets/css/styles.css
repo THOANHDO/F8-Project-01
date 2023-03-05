@@ -298,6 +298,9 @@ a {
   gap: 30px;
   margin-top: 70px;
 }
+.featured .list .item:first-child {
+  margin-right: -30px;
+}
 
 .featured .item {
   flex: 1;
