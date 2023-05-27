@@ -1,0 +1,162 @@
+.header-mobile {
+  display: none;
+}
+
+/* tablet anh mobile */
+@media screen and (max-width: 991px) {
+  .header-mobile {
+    display: block;
+    background: #e6f0ff;
+  }
+
+  .fixed-header {
+    display: none;
+  }
+
+  .toggle-drawer svg {
+    width: 28px;
+    color: #666;
+  }
+
+  .toggle-drawer {
+    display: inline-block;
+    padding: 28px 32px;
+  }
+
+  .drawer-checkbox:checked ~ .drawer-overlay {
+    opacity: 0.4;
+    visibility: visible;
+  }
+
+  .drawer-checkbox:checked ~ .drawer {
+    transform: translateX(0%);
+  }
+
+  .drawer {
+    position: fixed;
+    inset: 0 35% 0 0;
+    background: #fff;
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: 0.3s ease;
+    padding: 40px;
+  }
+
+  .drawer ul {
+    margin-top: 40px;
+  }
+
+  .drawer ul a {
+    display: inline-block;
+    padding: 14px 0;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #4f5361;
+  }
+
+  .drawer .drawer-sign {
+    border-top: 1px solid #333;
+  }
+
+  .drawer-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+  }
+
+  .hero-wrap {
+    height: auto;
+    padding-bottom: 10px;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .hero .info {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .hero .desc {
+    width: 80%;
+    margin: 30px auto auto;
+  }
+
+  .clients .images {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .guide-it {
+    flex: 1;
+    margin: 0;
+  }
+
+  .stats .img-block,
+  .stars .info {
+    width: 100%;
+  }
+
+  .stats .img-block {
+    order: 2;
+    margin-top: 80px;
+  }
+
+  .stats .row {
+    flex-direction: column;
+  }
+
+  .stats .info {
+    order: 1;
+    padding: 0;
+    width: 100%;
+  }
+
+  .stats .sub-title {
+    width: 70%;
+  }
+
+  .stats .info .desc {
+    width: 100%;
+  }
+
+  .stats .row-qty {
+    flex-direction: row;
+  }
+
+  .stats .qty {
+    font-size: 5rem;
+  }
+
+  .stats .qty-desc {
+    font-size: 1.5rem;
+  }
+
+  .subscription .image {
+    display: none;
+  }
+
+  .footer .row-top {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 80px;
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .featured .list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  .featured .list {
+    grid-template-columns: 1fr;
+  }
+}
