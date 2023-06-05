@@ -156,7 +156,57 @@
 
 /* mobile */
 @media screen and (max-width: 767px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+
   .featured .list {
     grid-template-columns: 1fr;
+  }
+
+  .hero .title {
+    font-size: 5rem;
+  }
+
+  .hero .desc {
+    font-size: 1.6rem;
+  }
+
+  .stats .img-block .image {
+    width: 100%;
+  }
+
+  .guides {
+    margin-top: 0;
+  }
+
+  .list-guide {
+    flex-direction: column;
+    margin-top: 0;
+    row-gap: 60px;
+  }
+
+  .stats .row-qty {
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscription .body {
+    height: auto;
+  }
+
+  .subscription .info {
+    padding: 50px 20px;
+  }
+
+  .footer .row-top {
+    grid-template-columns: 1fr;
+  }
+
+  .footer .row-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 30px;
   }
 }
